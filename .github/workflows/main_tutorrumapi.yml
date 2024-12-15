@@ -21,9 +21,6 @@ jobs:
         with:
           dotnet-version: '6.0.x'
 
-      - name: Build with dotnet
-        run: dotnet build --configuration Release
-
       - name: dotnet publish - TutoRum.Services
         run: dotnet publish TutoRum/TutoRum.Services/TutoRum.Services.csproj -c Release -o "${{ github.workspace }}/TutoRum.Services"
 
